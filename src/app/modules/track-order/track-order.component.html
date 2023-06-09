@@ -1,0 +1,43 @@
+
+        <div class="banner">
+            <span>TRACK ORDER</span>
+        </div>
+        
+        <div class="mainbody">
+            <!-- <div class="leftside"></div> -->
+            <div class="rightside">
+
+                    <div class="search">
+                        <form [formGroup]="trackform" novalidate>
+
+                        <div class="part1">
+                                <input type="text" id="number" placeholder="Enter Order ID" formControlName="orderId" value="" >
+                                <button (click)="onSubmit()" class="btn btn-primary" >submit</button>
+
+                        </div>
+                             </form>
+                    </div>
+                <div class="statussection">
+                    <img class="animated1 fadeInLeft" id="car" src="assets/images/delivery.webp">
+
+                <div class="status animated1 fadeInTop" id="ss"><img src="assets/images/status.PNG"></div>
+                <div class="status animated1 fadeInLeft"><img src="assets/images/Arrow.PNG" width="100%"></div>
+                <div class="result">
+                    <div class="result1">&nbsp;{{ order.status || 'N/A' }} </div>
+                    <div class="customername"><span class="f">Device Ordered:</span>&nbsp; {{ order.productName }}</div>
+                    <!-- <div class="customername"><span class="f">Quantity:</span>&nbsp; {{ order.productQty }}</div> -->
+                    <div class="customername"><span class="f">Customer Name:</span>&nbsp; {{ order.customerName || '??'}}</div>
+
+                    <div> <button class="btn btn-primary-sm" (click)="done()">done</button></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+

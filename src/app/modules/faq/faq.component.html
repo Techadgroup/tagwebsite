@@ -1,0 +1,44 @@
+<div class="banner">
+    <span>FAQs</span>
+</div>
+
+<br>
+
+<div class="main">
+
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="tags">
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div *ngFor="let Faq of faqs | paginate: { itemsPerPage: 10, currentPage: p }; let indexOfelement = index" style="text-align: left;" class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                       {{ indexOfelement +1  }}. &nbsp; {{ Faq.question }}
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <span class="written-text">
+                            <b>ANSWER:</b> &nbsp; {{ Faq.answer }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+        <br><br>
+
+        <div class="emptydata" *ngIf="! faqs?.length" style="display: flex; justify-content: center; color: rgb(12, 12, 131);">
+            <b>No FAQs Available</b> 
+          </div>
+          <div class="paginations"> 
+                  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div><br>
+    </div>
+
+    <br>
+</div><br><br><br><br>

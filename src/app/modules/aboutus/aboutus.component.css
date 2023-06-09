@@ -1,0 +1,263 @@
+.overall {
+
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    width: 95%;
+    height: auto;
+    margin: 0 auto 11%;
+
+}
+
+.brb {
+    /* border: 1px solid grey; */
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+.abtbanner {
+
+    /* border: 1px solid grey; */
+    width: 45%;
+    margin: 10px;
+    height: auto;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 35px;
+    text-align: center;
+}
+
+.accordion-item {
+    border: none;
+
+}
+
+.abtbanner .details {
+    /* border: 1px solid grey; */
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.abtbanner img {
+    width: 211px;
+    margin: 0 auto;
+
+}
+
+#ceo {
+    display: none;
+}
+
+.written-text {
+    /* text-align: center; */
+    line-height: 30px;
+    font-size: 14px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.values img {
+    width: 251px;
+
+}
+
+.ourteam {
+    display: none;
+}
+
+.we {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+@media (max-width: 1536px) {
+
+    .overall {
+        margin: 0 auto 12%;
+
+    }
+
+    .ourteam {
+
+        display: none;
+
+    }
+
+    .we {
+        justify-content: center;
+    }
+
+    .we img {
+        width: 33%;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .overall {
+        margin: 0 auto 24%;
+    }
+
+    .ourteam {
+        display: none;
+    }
+
+    .brb {
+        display: grid;
+    }
+
+    .abtbanner {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .abtbanner .details {
+        text-align: center;
+    }
+
+    #written-text {
+        line-height: 31px;
+    }
+
+    .values img {
+        width: 340px;
+    }
+
+    .we {
+        display: grid;
+        margin: 0 auto 12%;
+
+    }
+
+    .we img {
+        border-radius: 20px;
+        width: 78%;
+        margin: 17px auto;
+    }
+}
+
+@media (max-width: 634px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourteam {
+        /* margin: 0 auto 25%; */
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .overall {
+        margin: 0 auto 100%;
+
+    }
+
+    .ourteam {
+        display: none;
+    }
+
+    .abtbanner {
+        padding: 20px;
+
+    }
+
+    .abtbanner img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .abtbanner .details {
+        text-align: left;
+
+    }
+
+    #ceo {
+        display: none;
+    }
+
+    .we {
+        margin: 0 auto 100%;
+
+    }
+}
+
+@media (max-width: 375px) {
+
+    .overall {
+        margin: 0 auto 100%;
+
+    }
+
+    .we {
+        margin: 0 auto 12%;
+
+    }
+}
+
+@media (max-width: 320px) {}

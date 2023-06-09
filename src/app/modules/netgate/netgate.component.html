@@ -1,0 +1,55 @@
+<div class="banner">
+    <span>NETGATE</span>
+</div>
+
+<br>
+
+<div class="main">
+
+    <h3>NETGATE DEVICES</h3>
+
+    <span class="written-text">
+        Netgate is an open-source driven secure networking company that provides high-performance and affordable
+        appliance and software-based Firewall, VPN, and routing solutions for the home, office, and cloud. Our
+        pfSense®Plus and TNSR®software products connect and protect homes, businesses, educational institutions,
+        government agencies and service providers all over the world.
+
+        pfSense Plus is a fully-featured firewall, VPN and router solution while TNSR is a high-performance VPN and
+        router solution. Netgate appliances are factory loaded with either pfSense Plus or TNSR software – tested,
+        packaged and shipped through our local partner, InfoVale Ltd. </span>
+
+    <div class="search-box" id="mid">
+
+        <input type="text" placeholder="search by device name" [(ngModel)]="name" (ngModelChange)="SearchName()">
+        <i class="fa fa-search"></i>
+    </div>
+
+    <!-- <div class="park"> -->
+    <!-- <div class="showroom"> -->
+
+    <section>
+        <div *ngFor="let Device of devices | paginate: { itemsPerPage: 15, currentPage: p };" class="dcard">
+
+            <div class="name">
+                <h6>{{ Device.name }}</h6>
+            </div>
+
+            <div class="dcard-image">
+                <a (click)="onClick(Device.id)"><img src="{{ Device.imageURL }}" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <br><br>
+
+    <div class="emptydata" *ngIf="! devices?.length"
+        style="display: flex; justify-content: center; color: rgb(12, 12, 131);">
+        <b>No Devices Found...</b>
+    </div>
+    <div class="paginations">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div><br>
+
+</div>

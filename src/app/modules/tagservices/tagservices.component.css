@@ -1,0 +1,339 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.overall {
+
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    /* width: 100%; */
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+    font-family: poppins;
+
+}
+
+h3 {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 35px;
+    text-align: center;
+    margin: 15px auto;
+
+}
+
+.mainfront {
+    /* border: 1px solid grey; */
+    width: 95%;
+    margin: 0 auto 12%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+}
+
+.column {
+    border: 1px solid grey;
+    width: 50%;
+    height: 100px;
+}
+
+.written-text {
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 13px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.points-box {
+    /* border: 1px solid grey; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-bottom: 45px;
+
+}
+
+.point1 {
+
+    /* border: 1px solid grey; */
+    height: auto;
+    width: 50%;
+}
+
+.point2 {
+    /* border: 1px solid grey; */
+    height: auto;
+    width: 50%;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: left;
+    margin: 2% auto;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.point1 img {
+    width: 70%;
+    margin-top: 40px;
+
+}
+
+#mm {
+    margin: 70px auto;
+    width: 90%;
+    height: auto;
+}
+
+/* testimonials */
+
+.testimonial {
+    /* border: 1px solid grey; */
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: #f7f7fa; */
+}
+
+.testament {
+    /* border: 1px solid grey; */
+    width: 50%;
+    height: auto;
+    display: grid;
+
+}
+
+.testament img {
+    width: 100%;
+    margin: 193px auto;
+
+}
+
+.testimonies {
+    display: grid;
+    /* border: 1px solid grey; */
+    height: auto;
+    /* margin: 30px; */
+
+}
+
+.test-item {
+    /* border: 1px solid grey; */
+
+    background: #fff;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.imgicon {
+    width: 15%;
+    display: flex;
+    line-height: 40px;
+    /* border: 1px solid grey; */
+
+
+}
+
+.imgicon img {
+    width: 36px;
+    height: 34px;
+    border: 1px solid;
+    padding-left: 3px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* media queries */
+
+/* ipad mini */
+@media (max-width: 1536px) {
+    .mainfront {
+        margin: 0 auto 21%;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .points-box {
+        display: grid;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .point1 {
+        width: 100%;
+    }
+
+    .point2 {
+        width: 100%;
+    }
+
+    .testimonial {
+        display: grid;
+        width: 100%;
+    }
+
+
+    .testament {
+        width: 100%;
+    }
+
+    .testimonies {
+        width: 100%;
+        margin: auto;
+    }
+
+    .testimonial img {
+        margin: 10px;
+
+    }
+}
+
+
+@media (max-width: 634px) {
+
+    .boi1 img {
+        display: none;
+    }
+
+    .mainfront {
+        margin: 0 auto 25%;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .points-box {
+        display: grid;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .mainfront {
+        margin: 0 auto 110%;
+
+    }
+
+    .point1 {
+        width: 100%;
+    }
+
+    .point2 {
+        width: 100%;
+    }
+
+    .testimonial {
+        display: grid;
+        width: 100%;
+    }
+
+    .imgicon {
+        margin: 30px auto;
+
+    }
+
+    .testament {
+        width: 100%;
+    }
+
+    .testimonies {
+        width: 100%;
+        margin: auto;
+    }
+
+    .testimonial img {
+        margin: 0;
+
+    }
+
+
+
+}
+
+@media (max-width: 375px) {
+
+    .overall {
+        margin: 0 auto 110%;
+
+    }
+
+    .imgicon {
+        margin: 36px auto;
+
+    }
+
+    .test-item {
+        width: 100%;
+        margin: 9px auto;
+    }
+
+    .testimonial img {
+        margin: 0;
+
+    }
+}

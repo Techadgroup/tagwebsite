@@ -1,0 +1,118 @@
+<nav (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <div class="wrapper">
+        <div class="logo"><a href="#"><img src="assets/images/officialogo.png" alt=""></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><img src="assets/images/exit.png" width="20px"
+                    style="border-radius: 20px;" alt=""></label>
+            <li><a href="">Home</a></li>
+            <li>
+                <a class="desktop-item">About Us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">ABOUT US
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </label>
+                <ul class="drop-menu">
+                    <li><a href="/about-us">The Company</a></li>
+                    <li><a href="/our-mission-and-vision">Mission & Vision</a></li>
+                    <li><a href="/management">Management Team</a></li>
+                </ul>
+            </li>
+
+
+
+            <li>
+                <a class="desktop-item">OUR SERVICES
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </a>
+                <input type="checkbox" id="showDrop3">
+                <label for="showDrop3" class="mobile-item">OUR SERVICES
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </label>
+                <ul class="drop-menu">
+                    <li><a href="/consultancy-services">Consultancy Services</a></li>
+                    <!-- <li><a href="#">Technical Services</a></li> -->
+                    <li><a href="/technical-services">Technical Services</a></li>
+                    <li><a href="/partnerships">Partnerships</a></li>
+                </ul>
+            </li>
+            <li><a id="faq" href="/faq">FAQ <span style="text-transform: lowercase; margin: 0 -4px auto;">s</span></a>
+            </li>
+            <li>
+                <a class="desktop-item">NETGATE
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </a>
+                <input type="checkbox" id="showDrop1">
+                <label for="showDrop1" class="mobile-item">NETGATE
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </label>
+                <ul class="drop-menu">
+                    <li><a href="/netgate">Buy</a></li>
+                    <li><a href="/track-my-order">Track Order</a></li>
+                    <!-- <li><a href="#">Drop menu 4</a></li> -->
+                </ul>
+            </li>
+            <li>
+                <a class="desktop-item">MEDIA
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </a>
+                <input type="checkbox" id="showDrop2">
+                <label for="showDrop2" class="mobile-item">MEDIA
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </label>
+                <ul class="drop-menu">
+                    <li><a href="/blog-csr">csr activities</a></li>
+                    <li><a href="/blog">news & events</a></li>
+                    <li><a href="/album">gallery</a></li>
+                    <!-- <li><a href="#">Drop menu 4</a></li> -->
+                </ul>
+            </li>
+
+            <li><a id="faq" href="/#">CAREERS</a>
+            </li>
+
+            <li><a class=button-29 href="/contactus">Contact Us</a></li>
+            <!-- <li><a><button id="brr">Contact Us</button></a></li> -->
+
+        </ul>
+        <label for="menu-btn" class="btn menu-btn">
+            <img src="assets/images/hamburger2.webp" width="40" alt="">
+        </label>
+    </div>
+</nav>

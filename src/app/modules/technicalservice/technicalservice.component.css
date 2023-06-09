@@ -1,0 +1,434 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: -25px auto;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #3d4756;
+    text-align: left;
+    padding: 22px;
+
+}
+
+h3 {
+    font-size: 25px;
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 98%;
+    height: auto;
+    margin: 0 auto 12%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+.liststuff {
+    margin-bottom: 25px;
+
+}
+
+.container1 {
+    /* border: 1px solid grey; */
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.half1 {
+    /* border: 1px solid grey; */
+    width: 35%;
+}
+
+.half1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.half2 {
+    /* border: 1px solid grey; */
+    width: 65%;
+
+}
+
+
+.written-text {
+    line-height: 35px;
+    padding: 20px;
+    /* margin: 0px; */
+    text-align: left;
+    font-size: 13px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.text_part {
+    color: rgb(3, 30, 182);
+}
+
+.card_bowl {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 33%;
+    padding: 15px;
+    height: 60px;
+    display: -webkit-inline-box;
+    background: #fff;
+    padding-left: 20px;
+    border: 0.4em;
+    color: #596372;
+    font-weight: 600;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+}
+
+.card:hover {
+    background-color: #0c397c;
+    color: white;
+    cursor: pointer;
+}
+
+
+li {
+    list-style-type: circle;
+    width: 325px;
+
+}
+
+.topic {
+    font-size: 15px;
+    font-family: poppins;
+}
+
+.container2 {
+    display: none;
+}
+
+/* MAKE IT CUTE ----- */
+.tabs {
+    position: relative;
+    display: flex;
+    min-height: 500px;
+    font-family: poppins;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+
+}
+
+
+.tabby-tab {
+    flex: 1;
+}
+
+.tabby-tab label {
+    display: block;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: white;
+    border-right: 0.125rem solid #0c397c;
+    color: black;
+    cursor: pointer;
+
+}
+
+.tabby-tab label:hover {
+    background: #000caf;
+    color: white;
+}
+
+.tabby-content {
+    position: absolute;
+    line-height: 23px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 40px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+
+    font-size: 13px;
+    text-align: left;
+    font-family: 'Poppins';
+    color: #5f5f5f;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+    /* show/hide */
+    opacity: 0;
+    transform: scale(0.1);
+    transform-origin: top left;
+
+}
+
+.tabby-content img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+
+/* MAKE IT WORK ----- */
+
+.tabby-tab [type=radio] {
+    display: none;
+}
+
+[type=radio]:checked~label {
+    background: #0c397c;
+    color: white;
+    z-index: 2;
+}
+
+[type=radio]:checked~label~.tabby-content {
+    z-index: 1;
+
+    /* show/hide */
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* BREAKPOINTS ----- */
+@media screen and (max-width: 767px) {
+    .tabs {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tabs {
+        min-height: 580px;
+    }
+
+    .tabby-tab label {
+        height: 60px;
+    }
+
+    .tabby-content {
+        top: 60px;
+    }
+
+    .tabby-content img {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    @media (max-width: 1536px) {
+        .main {
+            margin: 0 auto 19%;
+
+        }
+
+        .main {
+            margin: 0 auto 100%;
+        }
+
+        .container1 {
+            display: grid;
+        }
+
+        .half1,
+        .half2 {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .written-text {
+            padding: 5px;
+            margin: 0;
+        }
+
+
+        .content {
+            width: 100%;
+
+        }
+
+        .container {
+            display: none;
+        }
+
+        .container2 {
+            display: block;
+            text-align: left;
+
+        }
+
+        h3 {
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        .accordion-item {
+            font-size: small !important;
+            outline: none !important;
+
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        margin: 0 auto 20%;
+    }
+
+
+    .container1 {
+        display: grid;
+    }
+
+    .half1,
+    .half2 {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .written-text {
+        padding: 5px;
+        margin: 0;
+    }
+
+
+    .content {
+        width: 100%;
+
+    }
+
+    .container {
+        display: none;
+    }
+
+    .container2 {
+        display: block;
+        text-align: left;
+
+    }
+
+    h3 {
+        line-height: 30px;
+    }
+
+    .accordion {
+        box-shadow: none;
+    }
+
+
+
+}
+
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        margin: 0 auto 100%;
+    }
+
+    .container1 {
+        display: grid;
+    }
+
+    .half1,
+    .half2 {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .written-text {
+        padding: 5px;
+        margin: 0;
+    }
+
+
+    .content {
+        width: 100%;
+
+    }
+
+    .container {
+        display: none;
+    }
+
+    .container2 {
+        display: block;
+        text-align: left;
+
+    }
+
+    h3 {
+        line-height: 30px;
+    }
+
+    .accordion {
+        box-shadow: none;
+    }
+
+
+}
+
+@media (max-width: 375px) {}

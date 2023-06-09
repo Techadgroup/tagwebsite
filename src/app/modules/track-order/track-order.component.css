@@ -1,0 +1,397 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+.mainbody {
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+
+.leftside img {
+
+    width: 66%;
+    margin: 120px 120px;
+
+}
+
+.rightside {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.search {
+    border: 1px solid grey;
+    margin-top: 170px;
+    margin-left: 40px;
+    width: 50%;
+    border-radius: 24px;
+    height: 55px;
+    display: flex;
+}
+
+
+#number {
+    height: 50px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    margin: 0px 21px auto;
+    /* margin-left: 33px; */
+    width: auto;
+    font-family: poppins;
+}
+
+.part1 {
+    font-family: poppins;
+    height: 45px;
+    width: auto;
+}
+
+
+.fa-search:before {
+    content: "\f002";
+    margin-left: 194px;
+}
+
+.fa-search {
+    margin: 20px -147px;
+
+}
+
+/* .c1{
+    margin-top: -32px;
+    
+} */
+.statussection {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+    /* margin-left: 148px; */
+    height: 250px;
+}
+
+.status {
+    /* border: 1px solid grey; */
+    width: 20%;
+}
+
+.result {
+    border: 1px #8080801f;
+    height: 250px;
+    width: 30%;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: #f0eded 1px 1px 1px 1px;
+    font-family: poppins;
+
+}
+
+.result1 {
+    padding: 17px;
+    color: #0A1744;
+    font-size: 25px;
+}
+
+.customername {
+    /* border: 1px solid grey;  */
+    height: 30px;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.f {
+    color: rgb(0, 27, 148);
+}
+
+/* .btn-primary{
+    margin: -57px 102% auto;
+    border-radius: 24px;
+} */
+
+.btn-primary-sm {
+    margin: 0;
+    /* border-radius: 24px; */
+    border: 1px;
+    background-color: #3654be;
+    color: white;
+    font-size: 11px;
+
+}
+
+
+@media (max-width: 1536px) {
+
+    .mainbody {
+        margin: 0 auto 21%;
+
+    }
+
+    .search {
+        width: 37%;
+        margin: 35px auto;
+    }
+
+    .btn-primary {
+        margin: -69px 97% auto;
+        border-radius: 11px;
+        width: 70px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 10%;
+
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .result {
+        margin-left: 40px;
+    }
+
+    .statussection {
+        width: 742px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 53px auto 5%;
+
+    }
+
+    .search {
+        margin-left: 200px;
+    }
+
+    .rightside {
+        margin: 0 auto 12%;
+        width: 100%;
+        display: grid;
+    }
+
+    #car {
+        display: none;
+
+    }
+
+
+    #number {
+        margin-left: 18px;
+        width: 255px;
+    }
+
+    .fa-search:before {
+        margin-left: 60px;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .btn-primary {
+        margin: 15px;
+        border-radius: 7px;
+    }
+
+}
+
+
+@media (max-width: 634px) {
+
+    .banner span {
+        top: 30%;
+    }
+
+    #car {
+        display: none;
+
+    }
+
+    .status {
+        display: none;
+    }
+
+    .mainbody {
+        margin: 0 auto 20%;
+    }
+
+    .statussection {
+        justify-content: center;
+        margin: 44 -71px auto;
+    }
+
+    .result {
+        margin: 0 auto;
+        width: 50%;
+        height: 267px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    #car {
+        display: none;
+
+    }
+
+    .banner span {
+        top: 26%;
+    }
+
+    .rightside {
+        display: grid;
+        margin: 0 auto 100%;
+
+    }
+
+    .statussection {
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .search {
+        margin: 12px auto;
+        width: 70%;
+
+    }
+
+    .status {
+        display: none;
+    }
+
+    .result {
+        width: 85%;
+        margin: 41px auto;
+
+    }
+
+    .fa-search:before {
+        margin-left: 25px;
+
+    }
+
+    .part1 {
+        width: 0;
+    }
+
+    .btn-primary {
+        margin: 20px;
+        border-radius: 6px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .banner {
+        height: 230px;
+
+    }
+
+    #car {
+        display: none;
+
+    }
+
+    .banner span {
+        top: 24%;
+    }
+
+    .rightside {
+        display: grid;
+        margin: 0 auto 100%;
+
+    }
+
+    .statussection {
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .search {
+        margin: 12px auto;
+        width: 90%;
+    }
+
+    .status {
+        display: none;
+    }
+
+    .result {
+        width: 85%;
+        margin: 0px auto;
+
+
+    }
+
+    .fa-search:before {
+        margin-left: 25px;
+
+    }
+
+    .part1 {
+        width: 0;
+    }
+
+    .btn-primary {
+        margin: 20px;
+        border-radius: 6px;
+    }
+
+}

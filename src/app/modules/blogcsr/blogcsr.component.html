@@ -1,0 +1,60 @@
+<div class="banner">
+    <span>CSR ACTIVITIES</span>
+</div>
+
+<br>
+
+<div class="main">
+
+
+<div class="newsfeed">
+
+    <h3>CSR ACTIVITIES</h3>
+
+    <div class="search-box">
+
+        <input type="text" placeholder="search news title" [(ngModel)]="title" (ngModelChange)="SearchName()">
+        <i class="fa fa-search"></i>
+    </div>
+
+    <!-- <div class="newsrow animated1 fadeInTop"> -->
+        <div  
+        *ngFor="let Blog of blogs | paginate: { itemsPerPage: 10, currentPage: p }; let indexOfelement = index"
+        class="newscard animated1 fadeInLeft">
+
+            <div class="blogimage">
+    
+                <img src="{{ Blog.imageURL }}" onerror="this.src='assets/images/ttt.png'" alt="">
+            </div>
+    
+               
+            <div class="blogcontent">
+                <div class="blodheader">
+                    <h5>{{ Blog.title }}</h5>
+                </div>
+                <span class="witten-text">{{ Blog.description }}</span>
+
+                <div class="datebox">
+                    <span id="date"><i>{{ Blog.createdAt | date: 'mediumDate' }}</i> </span>
+                </div>
+            </div>
+            <input type="button" value="Read More" (click)="onClick(Blog.id)">
+
+           
+        </div>
+
+    <!-- </div> -->
+
+    <div class="emptydata" *ngIf="! blogs?.length" style="display: flex; justify-content: center; color: rgb(12, 12, 131);">
+        <b>No CSR Activities Available</b> 
+      </div>
+      <div class="paginations"> <br>
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div><br>
+<br><br>
+    
+
+    
+
+</div>
+</div>

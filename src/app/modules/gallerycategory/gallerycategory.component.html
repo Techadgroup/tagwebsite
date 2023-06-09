@@ -1,0 +1,21 @@
+<div class="banner">
+    <span>PHOTO ALBUM</span>
+</div>
+
+<br>
+
+<div class="main  animated1 fadeInRight">
+    <div class="row" *ngFor="let Tab of album">
+        <div class="picture1" >
+           <a (click)="onClick(Tab.category)"> <img src="{{ Tab.imageURL }}" width="100%" height="100%" alt=""></a>
+          
+        </div>
+        <div class="card">
+            <span class="content">
+              <h3> {{Tab.category}}</h3> 
+            </span>
+           </div>
+            </div>
+
+  
+</div>

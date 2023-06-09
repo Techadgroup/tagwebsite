@@ -1,0 +1,159 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: poppins;
+    color: #130068;
+    line-height: 32px;
+    text-align: center;
+}
+
+h5 {
+    margin: 7px 0 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 100%;
+    margin: 0 auto 12%;
+    height: auto;
+    padding-top: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+.picture1 {
+    border: 1px #80808036;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 280px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #80808029;
+    transition: transform .3s;
+}
+
+.row {
+    display: inline-flex;
+    justify-content: center;
+    width: 280px;
+    height: auto;
+    margin: 5px;
+    background-color: white;
+
+}
+
+.card {
+    margin-top: -30px;
+    width: 230px;
+    height: 29px;
+    background-color: #ffffff;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .main {
+        margin: 0 auto 20%;
+
+    }
+
+    .picture1 {
+        width: 600px;
+        height: auto;
+        display: inline-flex;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .main {
+        margin: 0 auto 100%;
+
+    }
+
+    .picture1 {
+        width: 285px;
+        height: auto;
+        margin: 0px auto;
+        display: inline-flex;
+
+    }
+}
+
+@media (max-width: 375px) {
+
+
+    .picture1 {
+        width: 285px;
+        height: auto;
+    }
+
+    .picture1 img {
+        height: 200px;
+    }
+}

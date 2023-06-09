@@ -1,0 +1,49 @@
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #1377bc;
+    border-radius: 25px;
+    bottom: 20px;
+    left: 1%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+.bounce2 {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: fadeInLeft 2.0s both;
+    -moz-animation: fadeInLeft 2.0s both;
+    -o-animation: fadeInLeft 2.0s both;
+    animation: fadeInLeft 2.0s both;
+    -webkit-animation: bounce 0.75s infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    30% {
+        transform: scale(1, 1) translate(0px, 5px);
+    }
+
+    75% {
+        transform: scale(1, 1) translate(0px, -5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .gotopbtn {
+        display: none;
+    }
+}

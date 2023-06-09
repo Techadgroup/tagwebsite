@@ -1,0 +1,43 @@
+<div class="banner">
+    <span>NEWS & EVENT</span>
+</div>
+
+<br>
+
+
+<div class="blogsquare">
+
+      <h3>ABOUT {{ blog.title }}</h3>
+
+    <div class="main animated1 fadeInLeft">
+        <div class="c1">
+            <img src="{{ blog.imageURL }}" onerror="this.src='assets/images/ttt.png'" width="100%" height="auto" alt="">
+        </div>
+        <div class="c1">
+
+            <h3>{{ blog.title }}</h3>
+
+            <span class="written-text">
+                        {{ blog.description }}
+            </span>
+
+            <div class="socials">
+           <ul>
+                    <li> <span id="ss">Follow us on social media: </span></li>
+                    <li><a href="https://www.facebook.com/techadgh"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/techadgh"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/techadgh"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/technology-advantage-group/mycompany"><i
+                                class="fa fa-linkedin"></i></a></li>
+                </ul>
+                
+                <span><i>Posted on: {{ blog.createdAt | date: 'mediumDate' }}</i></span>
+
+            </div>    <br>
+
+            <!-- <button id="backbtn" routerLink="/blog">Go back</button> -->
+
+        </div>
+    </div>
+
+</div>

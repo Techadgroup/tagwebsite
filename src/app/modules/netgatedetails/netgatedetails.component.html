@@ -1,0 +1,178 @@
+<!-- <div class="banner" [ngStyle]="{background: 'url('+spec?.imageURL+')'}"> -->
+    <div class="banner">
+    <span>NETGATE</span>
+</div>
+
+<br>
+
+<div class="main">
+
+    <h3>About {{ spec?.name }}</h3>
+
+    <span class="written-text">
+        {{ spec?.description }}
+    </span>
+
+    <div class="specs">
+
+        <div class="c1">
+            <img src="{{ spec?.imageURL }}" width="90%" height="auto" alt="">
+
+            <div class="c11">
+                <input type="button" value="Order" (click)="open(content)">
+            </div>
+            
+        </div>
+        <div class="c2">
+
+            <div class="accordion accordion-flush" id="accordionFlushExample" >
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>FEATURES</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <span class="written-text">
+                                {{ spec?.features }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>WHO IS THIS FOR?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <span class="written-text">
+                                {{ spec?.targetAudience }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>PERFORMANCE (IPERF3 TRAFFIC)</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <span class="written-text">
+                                {{ spec?.performanceIperf }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>PERFORMANCE (IMIX TRAFFIC)</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <span class="written-text">
+                                {{ spec?.performanceImix }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>SPECIFICATIONS</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <span class="written-text">
+                                {{ spec?.specification }}
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><br><br>
+
+        </div>
+
+    </div> <br>
+    <button id="backbtn" routerLink="/netgate">Go back</button>
+
+</div>
+
+<!-- pop up form -->
+
+<ng-template #content let-c="close" let-d="dismiss">
+  
+     
+    <div class="modal-body">
+        <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        <h3 class="modal-title" id="modal-basic-title">Purchase Form</h3>
+        
+        <form [formGroup]="form" novalidate>
+
+            <input class="input_fields" type="text" placeholder="Full Name"  formControlName="customerName" value="">
+            <input class="input_fields" type="text" placeholder="Phone No."  formControlName="customerphone" value="">
+            <input class="input_fields" type="text" placeholder="Email Address"  formControlName="customerEmail" value="">
+            <select formControlName="productName">
+                <option selected disabled value="">-- Select Product --</option>
+                <option *ngFor="let Device of devices" [value]="spec.name">{{ Device.name }}</option>
+            </select>
+            <input class="input_fields" type="number" placeholder="Product Quantity"  formControlName="productQty" value="">
+            <input class="input_fields" type="text" placeholder="Company (optional)"  formControlName="companyName" value="">
+
+
+            <div class="tcs">
+                <div id="a">
+                    <input id="check" type="checkbox" formControlName="agreed" value=""> 
+                </div>
+                <div id="b">
+                    <span>
+                        <i>By Clicking on "Order", you have read and agreed to our <br>
+                            terms of service.</i>
+                    </span>
+                </div>
+                
+            </div>
+        </form>
+     
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" [disabled]="form.pristine || form.invalid" (click)="onSubmit(contentNotify)">Order</button>
+    </div>
+  </ng-template>
+  
+<!-- popup Modal message for success-->
+<ng-template #contentNotify let-c="close" let-d="dismiss">
+    <div class="modal-body center">
+        <button type="button" class="btn-close" style="display: flex; margin: 0 95% 0;" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="assets/images/success.png" width="10%" height="5%" style="display: flex; margin: 0 auto; text-transform: capitalize;" alt=""><br>&nbsp;&nbsp;
+      <span class="written-text" style="margin: 0 27%;">Request sent. We will reachout within 24 hours.</span>    </div>
+  </ng-template>

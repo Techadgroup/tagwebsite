@@ -1,0 +1,255 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+}
+
+h5 {
+    margin: 7px 0 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main {
+    width: 95%;
+    margin: 0 auto 14%;
+    height: auto;
+    padding-top: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+}
+
+.mainpage {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 482px;
+    /* margin-left: 198px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #3d4756;
+}
+
+.image {
+    /* border: 1px solid grey; */
+    width: 35%;
+    height: 450px;
+    margin: 45px auto;
+    object-fit: cover;
+    justify-content: centre;
+}
+
+.writing {
+    /* border: 1px solid #80808017; */
+    width: 40%;
+    height: 388px;
+    margin: 67px auto;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 1px 1px #80808029; */
+
+}
+
+.written-text {
+    line-height: 30px;
+    font-size: 14px;
+    font-family: poppins;
+    color: #7688a2;
+}
+
+.phone {
+    border: 1px solid #80808017;
+    width: 90%;
+    height: 91px;
+    margin: 0px auto;
+    display: flex;
+    text-align: left;
+    line-height: 31px;
+    border-radius: 10px;
+}
+
+.part1 {
+    /* border: 1px solid grey; */
+    width: 6%;
+    height: 50px;
+    margin-top: 23px;
+    margin-left: 15px;
+
+}
+
+.part2 {
+    /* border: 1px solid grey; */
+    width: 80%;
+    height: 50px;
+    color: #7688a2;
+    font-size: 14px;
+    font-family: poppins;
+    margin-top: 23px;
+    margin-left: 20px;
+
+}
+
+.link {
+    border: 1px solid grey;
+    margin: 25px;
+}
+
+.address {
+    border: 1px solid grey;
+    margin: 25px;
+}
+
+.number {
+    border: 1px solid grey;
+    margin: 25px;
+}
+
+.socials {
+    /* border: 1px solid #c7c7c7; */
+    height: 60px;
+    margin: 20px;
+    line-height: 3;
+
+}
+
+.socials li {
+    list-style: none;
+    padding: 5px;
+}
+
+.socials ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socials ul li i {
+    background-color: #095d99;
+    height: 38px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+
+    .mainpage {
+        margin: 0 auto 12%;
+    }
+
+    .image {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .main {
+        margin: 0 auto 100%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .writing {
+        width: 97%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .main {
+        margin: 0 auto 100%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .writing {
+        width: 97%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    #ss {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {}

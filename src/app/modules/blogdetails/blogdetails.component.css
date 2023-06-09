@@ -1,0 +1,222 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 23px;
+    font-family: poppins;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+}
+
+h5 {
+    margin: 7px 0 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.blogsquare {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+}
+
+.main {
+
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.written-text {
+    line-height: 30px;
+    font-size: 14px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.c1 {
+    /* border: 1px solid grey; */
+    text-align: left;
+    padding: 10px;
+    width: 50%;
+    height: 400px;
+
+}
+
+.c1 img {
+    margin: -11px auto;
+
+}
+
+.socials {
+    border: 1px solid #c7c7c7;
+    height: 60px;
+    margin: 20px;
+    line-height: 3;
+
+}
+
+.socials li {
+    list-style: none;
+    padding: 5px;
+}
+
+.socials ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socials ul li i {
+    background-color: #095d99;
+    height: 38px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#backbtn {
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px auto 0 119px;
+    width: 90px;
+}
+
+/* media queries */
+@media (max-width: 1536px) {
+
+    .main {
+        margin: 0 auto 20%;
+    }
+
+    /* #backbtn{
+        display: none;
+    } */
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .main {
+        display: grid;
+    }
+
+    .c1 {
+        text-align: center;
+        padding: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .socials {
+        margin: 0;
+    }
+
+    .c1 {
+        text-align: center;
+        padding: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+    .socials li {
+        padding: 2px;
+
+    }
+
+    #ss {
+        font-size: 12px;
+
+    }
+
+    @media (max-width: 375px) {
+        .blogsquare {
+            margin: 0 auto 100%;
+            width: 100%;
+
+        }
+
+        .socials {
+            width: 356px;
+
+        }
+
+
+    }
+
+}

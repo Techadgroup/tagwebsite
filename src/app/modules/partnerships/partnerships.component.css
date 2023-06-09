@@ -1,0 +1,166 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 35px;
+    text-align: center;
+    margin: 15px auto;
+
+}
+
+.written-text {
+    line-height: 20px;
+    padding: 20px;
+    font-size: 16px;
+    color: #7688a2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 98%;
+    height: auto;
+    margin: 0 auto 12%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+.bigbox {
+    /* border: 1px solid grey; */
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+
+
+}
+
+.sub {
+
+    border: 1px solid rgba(228, 228, 228, 0.308);
+    border-radius: 10px;
+    width: 24%;
+    margin: 0 auto;
+    height: 330px;
+    display: grid;
+    padding: 10px;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+}
+
+
+.sub img {
+    width: 150px;
+    height: 150px;
+}
+
+.sub .content {
+    text-align: center;
+    line-height: 20px;
+    padding: 0px;
+    font-size: 11px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+@media (max-width: 1536px) {
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin: 5% auto 10%;
+    }
+
+    .sub {
+        height: auto;
+        margin: 5px;
+    }
+
+
+
+}
+
+@media (max-width: 786px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        display: grid;
+        margin: 0 auto 12%;
+    }
+
+    .sub {
+        width: 100%;
+    }
+
+    .sub img {
+        width: 150px;
+        margin: 30px auto;
+        height: 150px;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub {
+        height: auto;
+        margin: 5px auto;
+
+    }
+}
+
+@media (max-width: 375px) {
+
+    .main {
+        margin: 0 auto 100%;
+    }
+
+}

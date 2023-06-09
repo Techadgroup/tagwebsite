@@ -1,0 +1,284 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 250px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 30%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: poppins;
+    /* font-weight: 700; */
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+}
+
+h5 {
+    margin: 7px 0 12px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    color: #3d4756;
+
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 95%;
+    margin: 0 auto 12%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+}
+
+.specs {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.written-text {
+    text-align: center !important;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: poppins;
+    margin: 0px 60px;
+    color: #7688a2;
+}
+
+
+.c1 {
+    /* border: 1px solid rgba(204, 204, 204, 0.822);
+    border-radius: 10px; */
+    width: 40%;
+    height: auto;
+
+}
+
+.c1 img {
+    margin: 10% auto;
+}
+
+.c2 {
+    border: 1px solid rgba(235, 235, 235, 0.822);
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+
+}
+
+input {
+
+    height: 2.25rem;
+    width: 122px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px -1px #259ed7;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -.00625em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    margin: 0 auto;
+    text-transform: capitalize;
+    background-color: #1377bc;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+form .input_fields,
+select {
+    width: 330px;
+    height: 45px;
+    border: 1px solid #e4e4e487;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+    background: white;
+    color: black;
+    outline: none;
+    margin: 14px auto;
+    text-align: left;
+    box-shadow: none;
+}
+
+.modal {
+    position: absolute;
+}
+
+.modal-footer {
+    margin: 0 auto;
+
+}
+
+select {
+    display: flex;
+}
+
+#backbtn {
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    width: 90px;
+}
+
+.btn-close {
+    margin: 0 95%;
+    border: none !important;
+}
+
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: 0 !important;
+}
+
+.tcs {
+
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+}
+
+#check {
+    width: 17px;
+    height: 17px;
+    box-shadow: none;
+    border: none;
+}
+
+#a {
+    padding: 5px;
+}
+
+@media (max-width: 1536px) {
+
+    .banner span {
+        top: 25%;
+
+    }
+
+    .main {
+        margin: 0 2% 12%;
+    }
+}
+
+@media (max-width: 634px) {}
+
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .specs {
+        display: grid;
+    }
+
+    .c1 {
+        width: 100%;
+    }
+
+    .c2 {
+        width: 100%;
+    }
+
+    form .input_fields {
+        width: 95%;
+
+    }
+
+    .written-text {
+        margin: 0;
+
+    }
+
+    select {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .main {
+
+        margin: 0 auto 102%;
+
+    }
+
+    .written-text {
+        margin: 0;
+
+    }
+
+}

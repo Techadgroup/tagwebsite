@@ -1,0 +1,217 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 100%;
+    margin: 0 auto 12%;
+    height: auto;
+    padding-top: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+.row1 {
+    /* border: 1px solid grey; */
+    justify-content: center;
+    display: flex;
+    margin: 0 auto 5%;
+}
+
+/* .con1{
+    border: 1px solid grey;
+    width: 100%;
+} */
+.picture1 {
+    border: 2px #80808040;
+    width: 210px;
+    height: 210px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #80808029;
+}
+
+img {
+    /* margin-top: 11px; */
+    border-radius: 10px;
+}
+
+.writing1 {
+    /* border: 1px solid grey; */
+    width: 100%;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: poppins;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #3d4552ce;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+
+h3 {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 700;
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+}
+
+.profile {
+    /* border: 1px solid grey; */
+    width: 80%;
+    border-radius: 10px;
+    height: auto;
+    text-align: left;
+    line-height: 25px;
+    font-size: 13px;
+    color: #7688a2;
+    font-family: poppins;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: poppins;
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .main {
+        margin: 0 auto 20%;
+    }
+
+    .picture1,
+    .picture2 {
+        width: 500px;
+        height: 500px;
+        margin: 30px auto 50px;
+    }
+
+    .row1 {
+        display: grid;
+    }
+
+    .profile {
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 1536px) {
+
+    .main {
+        margin: 0 auto 15%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .banner span {
+        top: 30%;
+    }
+
+    .main {
+        margin: 0 auto 100%;
+    }
+
+    .picture1,
+    .picture2 {
+        width: 300px;
+        height: 300px;
+        margin: 30px auto 50px;
+    }
+
+    .row1 {
+        display: grid;
+    }
+
+    .profile {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .banner span {
+        top: 25%;
+    }
+
+    .main {
+        margin: 0 auto 101%;
+    }
+
+    .profile {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .row1 {
+        display: grid;
+    }
+
+
+}

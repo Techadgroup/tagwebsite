@@ -1,0 +1,37 @@
+<div class="banner">
+    <span>GALLERY</span>
+</div>
+
+<br>
+
+<div class="main  animated1 fadeInRight">
+    <!-- <div class="row1"> -->
+        <div class="picture1" *ngFor="let Pic of pictures" >
+           <a (click)="open(content, Pic)"> <img src="{{ Pic.imageUrl }}" width="100%" height="100%" alt=""></a>
+        </div>
+    <!-- </div> -->
+
+    
+<div class="emptydata" *ngIf="! pictures?.length" style="display: flex; justify-content: center; color: rgb(12, 12, 131);">
+    <b>No Pictures Found... <a href="/album">Go back</a></b> 
+  </div>
+  
+</div>
+
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+  
+     
+    <div class="modal-body">
+        <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        
+         <div class="image">
+
+            <img src="{{ selected }}" width="100%" height="auto" alt="">
+
+         </div>
+     
+    </div>
+  
+  </ng-template>

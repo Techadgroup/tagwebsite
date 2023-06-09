@@ -1,0 +1,318 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+h2 {
+    margin: 0 auto -5px;
+    font-size: 16px;
+
+}
+
+h3 {
+    font-size: 23px;
+    font-family: poppins;
+    color: #3d4756;
+    line-height: 60px;
+    text-align: center;
+}
+
+h5 {
+    margin: 7px 0 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: poppins;
+
+}
+
+.main {
+    margin: 0 auto 14%;
+
+}
+
+.newsfeed {
+    /* border: 1px solid grey; */
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+.newsrow {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.newscard {
+    width: 85%;
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    height: auto;
+    display: flex;
+    margin: 10px auto;
+
+}
+
+img {
+    /* border: 1px solid rgba(189, 189, 189, 0.521); */
+    max-width: 350px;
+    max-height: 350px;
+}
+
+
+
+.blogcontent {
+    /* border:1px solid rgba(189, 189, 189, 0.521); */
+    height: auto;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    padding: 30px;
+    font-size: 3px;
+    text-align: left;
+
+}
+
+.blogcontent span {
+    width: 100%;
+    height: 100px;
+
+}
+
+span {
+    text-align: left;
+    line-height: 15px;
+    font-size: 12px;
+    color: #7688a2;
+    font-family: poppins;
+}
+
+.datebox {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+#date {
+    color: blue;
+    font-weight: bold;
+    font-size: 11px;
+    margin: -12px;
+
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 46px;
+    margin: 17px;
+}
+
+.search-box input {
+    width: 250px;
+    height: 40px;
+    box-shadow: none;
+    border: 1px solid rgba(201, 201, 201, 0.692);
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+    background: white;
+    color: black;
+    outline: none;
+    font-family: poppins;
+
+}
+
+.fa {
+    line-height: 3;
+    margin: -5px 0 0px -54px;
+    font-size: 18px;
+}
+
+input {
+
+    height: 2.25rem;
+    width: 122px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px -1px #259ed7;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -.00625em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    margin-right: 15px;
+    text-transform: capitalize;
+    background-color: #1377bc;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+    .newsrow {
+        display: grid;
+    }
+
+    .blogcontent {
+        padding: 5px;
+    }
+
+    .newsrow {
+        display: grid;
+    }
+
+    .newscard {
+        display: grid;
+        width: 100%;
+    }
+
+    #date {
+        display: none;
+    }
+
+    .newsfeed {
+        margin: 0 auto 100%;
+
+    }
+
+    .blogimage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .datebox {
+        justify-content: center;
+    }
+
+    .search-box {
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 30%;
+
+    }
+
+    .fa {
+        margin: 0 0 0px -50px;
+        line-height: 2;
+    }
+
+    .blogcontent {
+        padding: 5px;
+    }
+
+    .newsrow {
+        display: grid;
+    }
+
+    .newscard {
+        display: grid;
+        width: 100%;
+    }
+
+    #date {
+        display: none;
+    }
+
+    .newsfeed {
+        margin: 0 auto 100%;
+
+    }
+
+    .blogimage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .datebox {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .newscard {
+        display: grid;
+        width: 100%;
+    }
+
+    #date {
+        display: none;
+    }
+
+    .blogcontent {
+        padding: auto;
+    }
+
+    .blogimage img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .datebox {
+        justify-content: center;
+    }
+}

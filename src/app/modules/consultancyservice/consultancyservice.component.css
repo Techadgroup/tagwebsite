@@ -1,0 +1,125 @@
+.banner {
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: 300px;
+    background-image: url(src/assets/images/banc.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner span {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 25%;
+}
+
+.main {
+    /* border: 1px solid grey; */
+    width: 98%;
+    height: auto;
+    margin: 0 auto 12%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+    box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
+
+
+}
+
+::selection {
+    background-color: #4EC6DE;
+}
+
+.tabs {
+    width: 700px;
+    margin: 50px auto 12%;
+}
+
+.tabs>input {
+    display: none;
+}
+
+.tabs>label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.tabs>label:hover,
+.tabs>checked+label {
+    background: #4EC6DE;
+}
+
+.tab {
+    clear: both;
+    perspective: 600px;
+
+}
+
+.tab>div {
+    width: 700px;
+    position: absolute;
+    border: 2px solid #4EC6DE;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotate(-20deg);
+    transform-origin: top center;
+    transition: opacity, .3s transform 1s;
+    z-index: 0;
+}
+
+.tab-nav-1:checked~.tab>div:nth-of-type(1),
+.tab-nav-2:checked~.tab>div:nth-of-type(3),
+.tab-nav-3:checked~.tab>div:nth-of-type(3),
+.tab-nav-4:checked~.tab>div:nth-of-type(4) {
+    transform: rotateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, rgba(0, 60, 255, 0.603), rgba(0, 60, 255, 0.836)), url(src/assets/images/halfcard.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner span {
+        top: 15%;
+
+    }
+
+}
