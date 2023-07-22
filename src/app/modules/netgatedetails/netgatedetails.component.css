@@ -234,6 +234,11 @@ select {
         display: flex;
         justify-content: center;
     }
+    .main {
+
+        margin: 0 auto 102%;
+
+    }
 
     .banner span {
         top: 30%;

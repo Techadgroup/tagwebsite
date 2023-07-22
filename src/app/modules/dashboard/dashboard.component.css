@@ -665,6 +665,51 @@
 
  }
 
+
+ /* newsletter */
+
+ .newsletter, .theme-bg{
+    /* background-image: url(src/assets/images/bg-new.png); */
+    padding: 60px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background: url(src/assets/images/bg-new.png), rgba(0, 60, 255, 0.836);
+    height: 300px;
+    margin-bottom: 25px;
+    
+}
+
+h4{
+    color: #ffffff;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Poppins';
+
+}
+
+#newletter_input{
+    width: 400px;
+    height: 55px;
+    border: 4px solid #e4e4e487;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+    background: white;
+    color: black;
+    outline: none;
+    margin: 14px auto;
+    font-family: 'Poppins';
+    text-align: left;
+    box-shadow: none;
+}
+
+
+
+
+ /* end of newsletter */
+
+
  /* end of exerpts section */
 
  @keyframes bounce {
@@ -1198,6 +1243,20 @@
 
      .buy-btn {
          margin: 45px auto;
+     }
+
+     h4{
+        font-size: 15px;
+     }
+
+     .newsletter input{
+        /* width: 100%; */
+        font-size: 12px;
+     }
+
+     #newletter_input{
+        width: 385px;
+
      }
 
 
