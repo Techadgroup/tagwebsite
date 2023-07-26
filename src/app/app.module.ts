@@ -32,7 +32,6 @@ import { PartnershipsComponent } from './modules/partnerships/partnerships.compo
 import { GallerycategoryComponent } from './modules/gallerycategory/gallerycategory.component';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { NewsletterComponent } from './modules/newsletter/newsletter.component';
 
 
 
@@ -59,7 +58,6 @@ import { NewsletterComponent } from './modules/newsletter/newsletter.component';
     TechnicalserviceComponent,
     PartnershipsComponent,
     GallerycategoryComponent,
-    NewsletterComponent,
 
 
 

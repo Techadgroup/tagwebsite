@@ -24,7 +24,6 @@ import { TrackOrderComponent } from './modules/track-order/track-order.component
 import { WrongrouteComponent } from './modules/wrongroute/wrongroute.component';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { TestimonialsComponent } from './shared/components/testimonials/testimonials.component';
-import { NewsletterComponent } from './modules/newsletter/newsletter.component';
 
 const routes: Routes = [{
   path: '',
@@ -116,10 +115,6 @@ const routes: Routes = [{
   {
     path: 'testimonials',
     component: TestimonialsComponent
-  },
-  {
-    path: 'newsletter',
-    component: NewsletterComponent
   }
 
   ]
