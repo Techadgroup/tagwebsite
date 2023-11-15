@@ -13,6 +13,21 @@ body {
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 
 
+/* Change the scrollbar width and track color */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  /* Change the scrollbar thumb color */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555555; /* Color of the scrollbar thumb */
+  }
+  
+  /* Change the scrollbar track color */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+
 /* fade in top */
 .fadeInTop {
     -webkit-animation: fadeInTop 1.5s both;
@@ -243,3 +258,4 @@ body {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
 }
+

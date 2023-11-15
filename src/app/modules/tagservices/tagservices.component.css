@@ -33,13 +33,13 @@
 
 h2 {
     margin: 0 auto -5px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: poppins;
 
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-family: poppins;
     font-weight: 700;
     color: #3d4756;
@@ -71,8 +71,8 @@ h3 {
     text-align: left;
     line-height: 30px;
     padding: 20px;
-    font-size: 13px;
-    color: #7688a2;
+    font-size: 11.5px;
+    color: #ffffff;
     font-family: poppins;
 }
 
@@ -97,7 +97,7 @@ h3 {
     height: auto;
     width: 50%;
     line-height: 30px;
-    font-size: 13px;
+    font-size: 11.5px;
     text-align: left;
     margin: 2% auto;
     color: #7688a2;
@@ -151,7 +151,8 @@ h3 {
 .test-item {
     /* border: 1px solid grey; */
 
-    background: #fff;
+    /* background: #fff; */
+    background-image: radial-gradient(100% 100% at 100% 0,#5adaff 0,#5468ff 100%);
     -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
     box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
     width: auto;

@@ -41,7 +41,7 @@ nav .wrapper {
   position: relative;
   max-width: 1300px;
   padding: 0px 30px;
-  height: 82px;
+  height: 70px;
   line-height: 70px;
   margin: auto;
   display: flex;
@@ -58,7 +58,7 @@ nav .wrapper {
 
 .logo {
   /* width: 430px; */
-  width: 270px;
+  width: 215px;
 }
 
 .logo img {
@@ -80,7 +80,7 @@ nav .wrapper {
   color: #000058;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   padding: 9px 15px;
   border-radius: 5px;
@@ -108,8 +108,8 @@ svg {
   line-height: 45px;
   padding: 11px;
   z-index: 1;
-  top: 90px;
-  margin: 12px auto;
+  top: 59px;
+  margin: 0px auto;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);

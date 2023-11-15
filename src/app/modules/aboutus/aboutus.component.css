@@ -47,7 +47,7 @@
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-family: poppins;
     font-weight: 700;
     color: #3d4756;
@@ -70,7 +70,7 @@ h3 {
 }
 
 .abtbanner img {
-    width: 211px;
+    width: 195px;
     margin: 0 auto;
 
 }
@@ -82,7 +82,7 @@ h3 {
 .written-text {
     /* text-align: center; */
     line-height: 30px;
-    font-size: 14px;
+    font-size: 11.5px;
     color: #7688a2;
     font-family: poppins;
 }

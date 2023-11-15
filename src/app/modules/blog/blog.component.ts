@@ -12,6 +12,7 @@ export class BlogComponent implements OnInit {
   blogs: Blog[];
   p: number = 1;
   title: string;
+  exnews: any = [];
 
 
   constructor(private _service: MainHttpService, private _router: Router) { }
@@ -26,6 +27,12 @@ export class BlogComponent implements OnInit {
 
     document.title= `News & Events`;
 
+    this._service.getExternalBlogs().subscribe(
+      res=>{
+        this.exnews = res;
+        // console.log(res);
+      }
+    )
 
   }
 
@@ -34,7 +41,7 @@ export class BlogComponent implements OnInit {
     if (this.title == "") {
       this.ngOnInit();
     } else {
-      this.blogs = this.blogs.filter(res => {
+      this.exnews.articles = this.exnews.articles.filter(res => {
         return res.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
       });
     }
@@ -42,7 +49,9 @@ export class BlogComponent implements OnInit {
 
   
   onClick(id: string){
-    this._router.navigate(['/blog-detail', id]);
+    // this._router.navigate(['/blog-detail', id]);
+    window.location.href=id;
+
   }
 
 

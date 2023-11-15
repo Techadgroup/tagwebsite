@@ -87,7 +87,7 @@ img {
 
 .blogcontent {
     /* border:1px solid rgba(189, 189, 189, 0.521); */
-    height: 200px;
+    height: auto;
     overflow: hidden !important;
     text-overflow: ellipsis;
     padding: 30px;
@@ -104,7 +104,7 @@ img {
 span {
     text-align: left;
     line-height: 15px;
-    font-size: 12px;
+    font-size: 11px;
     font-family: poppins;
     color: #7688a2;
 }
@@ -137,7 +137,7 @@ span {
     border: 1px solid rgba(201, 201, 201, 0.692);
     border-radius: 35px;
     padding: 20px;
-    font-size: 13px;
+    font-size: 11px;
     font-family: poppins;
     text-align: left;
     background: white;
@@ -159,7 +159,7 @@ input {
     padding-right: 1rem;
     /* border-radius: 8px; */
     box-shadow: 0 2px 5px -1px #259ed7;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 24px;
     letter-spacing: -.00625em;
     text-align: center;

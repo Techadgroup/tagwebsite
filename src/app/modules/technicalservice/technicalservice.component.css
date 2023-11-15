@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-family: DM Sans, sans-serif;
     font-weight: 700;
     color: #3d4756;
@@ -89,7 +89,7 @@ h3 {
     padding: 20px;
     /* margin: 0px; */
     text-align: left;
-    font-size: 13px;
+    font-size: 11.5px;
     color: #7688a2;
     font-family: poppins;
 }
@@ -168,6 +168,8 @@ li {
     border-right: 0.125rem solid #0c397c;
     color: black;
     cursor: pointer;
+    font-size: 11.5px;
+
 
 }
 
@@ -188,7 +190,7 @@ li {
     padding: 20px;
     border-radius: 0 0 8px 8px;
 
-    font-size: 13px;
+    font-size: 11.5px;
     text-align: left;
     font-family: 'Poppins';
     color: #5f5f5f;
@@ -220,6 +222,8 @@ li {
     background: #0c397c;
     color: white;
     z-index: 2;
+    font-size: 11.5px;
+
 }
 
 [type=radio]:checked~label~.tabby-content {

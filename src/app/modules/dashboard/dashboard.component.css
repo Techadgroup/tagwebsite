@@ -244,7 +244,7 @@
  }
 
  .wrt span {
-     font-size: 14px;
+     font-size: 12px;
      font-family: poppins;
      line-height: 29px;
      text-align: center;
@@ -276,8 +276,8 @@
  }
 
  .itembox img {
-     width: 80px;
-     margin: 0 144px auto;
+    margin: 0 152px auto;
+    width: 50px;
  }
 
  .itemlist {
@@ -294,8 +294,14 @@
 
  }
 
+ .itemlist ul{
+    font-size: 11px;
+
+ }
+
  .itemlist ul li {
      list-style-type: circle;
+
 
  }
 
@@ -322,8 +328,8 @@
  }
 
  .testament img {
-     width: 100%;
-     margin: 65px auto;
+    width: 90%;
+    margin: 80px auto;
 
  }
 
@@ -339,7 +345,8 @@
  .test-item {
      /* border: 1px solid grey; */
 
-     background: #ffff;
+     /* background: #ffff; */
+     background-image: radial-gradient(100% 100% at 100% 0,#5adaff 0,#5468ff 100%);
      -webkit-box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
      box-shadow: 0 10px 20px hsl(0deg 0% 67% / 15%);
      /* width: auto; */
@@ -349,6 +356,7 @@
      display: flex;
      justify-content: center;
      border-radius: 10px;
+     border: 4px solid #ebebeb;
  }
 
  .imgicon {
@@ -361,8 +369,8 @@
  }
 
  .imgicon img {
-     width: 75px;
-     height: 68px;
+    width: 55px;
+    height: 55px;
      border-radius: 20px;
      margin: 50px auto;
 
@@ -370,9 +378,9 @@
 
  .written-text {
      /* border: 1px solid grey; */
-     color: #7688a2;
+     color: #ffffff;
      width: 75%;
-     font-size: 12px;
+     font-size: 10.5px;
      font-family: 'Poppins';
      margin: 10px;
      padding: 5px 13px;
@@ -391,10 +399,9 @@
 
 
  h3 {
-     font-size: 32px;
      font-weight: 500;
-     font-size: 27px;
-     color: #3d4756;
+     font-size: 22px;
+     color: #767676;
      line-height: 40px;
      display: flex;
      justify-content: center;
@@ -585,13 +592,14 @@
      justify-content: space-evenly;
      align-items: center;
      flex-wrap: wrap;
-     padding: 0px;
+     padding: 30px;
 
  }
 
  .trycontainer .card {
      position: relative;
-     max-width: 300px;
+     max-width: 260px;
+     font-size: 11px;
      border: none;
      height: 220px;
      margin: 30px 10px;
@@ -654,7 +662,7 @@
 
  h2 {
      margin: 0 0 5px;
-     font-size: 16px;
+     font-size: 14px;
      font-weight: bold;
      font-family: poppins;
 
@@ -674,10 +682,12 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    background: url('src/assets/images/bg-new.png'), rgba(0, 60, 255, 0.836);
+    background: url('src/assets/images/bg-new.png'), radial-gradient(100% 100% at 100% 0,#5adaff 0,#5468ff 100%);;
+
     height: 300px;
     margin-bottom: 25px;
-    
+    margin-top: -50px;
+
 }
 
 h4{
@@ -743,7 +753,7 @@ h4{
      }
 
      .itembox {
-         height: 386px;
+         height: 333px;
          /* width: 370px; */
          /* padding-right: 5px; */
 
@@ -760,8 +770,8 @@ h4{
      }
 
      .our-approach-tile {
-         height: 400px;
-     }
+        height: 300px;
+    }
 
      /* .testimonial{
         display: grid;
@@ -1005,8 +1015,7 @@ h4{
 
      .our-approach-tile {
          width: 85%;
-         margin: 0 auto;
-     }
+         margin: 30px auto;     }
 
      .itembox img {
          margin: 0 42%;
@@ -1045,6 +1054,10 @@ h4{
 
      }
 
+     .testament img{
+        display: none;
+     }
+
      h3 {
          text-align: center;
      }
@@ -1076,8 +1089,8 @@ h4{
  @media (max-width: 634px) {
 
      .carousel-inner {
-         height: 70vh;
-     }
+        height: 46vh;
+    }
 
      .testimonial {
          margin: 0 auto;

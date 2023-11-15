@@ -19,7 +19,7 @@
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-family: DM Sans, sans-serif;
     font-weight: 700;
     color: #3d4756;
@@ -32,7 +32,7 @@ h3 {
 .written-text {
     line-height: 20px;
     padding: 20px;
-    font-size: 16px;
+    font-size: 11px;
     color: #7688a2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -85,8 +85,8 @@ h3 {
 .sub .content {
     text-align: center;
     line-height: 20px;
-    padding: 0px;
-    font-size: 11px;
+    padding: 5px;
+    font-size: 10px;
     color: #7688a2;
     font-family: poppins;
 }
