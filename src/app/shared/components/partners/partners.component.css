@@ -1,5 +1,4 @@
 .partner {
-    /* border: 1px solid grey; */
     width: 90%;
     margin: 0 auto 12%;
     height: auto;
@@ -7,27 +6,41 @@
 
 }
 
-/* .partner .row{
-
-    animation: scroll 20s linear infinite;
+.partner .row {
     display: flex;
-    width: calc(200px * 30);
-  
-  }
-  
-  @keyframes scroll{
-  
-  0%{
-  
-    transform: translateX(0);
-  }
-  100%{
-  
-    transform: translateX(calc(-200px * 2));
-  
-  }
-  
-  } */
+    overflow: hidden;    
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.partner img {
+    width: 150px;
+    margin-right: 20px;
+    opacity: 0.5; /* Set the initial transparency level */
+    transition: opacity 0.5s ease; /* Add a smooth transition effect */
+    animation: slideLeft 15s linear infinite; /* Adjust the duration as needed */
+
+}
+
+.partner img:hover {
+    opacity: 5; /* Set the opacity to 1 on hover to display in full color */
+}
+
+
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 .row {
 
